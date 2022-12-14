@@ -14,11 +14,12 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        a {
+        > a {
             margin: 0 0.5rem;
+            text-decoration: none;
             text-align: center;
         }
-        a:hover {
+        > a:hover {
             text-decoration: underline;
         }
         .active {
