@@ -1,0 +1,8 @@
+.footer {
+    background-color: blue;
+    padding: 1rem;
+    > p {
+        font: 1rem monospace, sans-serif;
+        text-align: center;
+    }
+}
