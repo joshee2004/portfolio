@@ -3,7 +3,16 @@
     padding: 1rem;
     > p {
         font: 1rem monospace, sans-serif;
-        color: white;
         text-align: center;
+    }
+    > p > a {
+        color: white;
+        text-decoration: underline;
+    }
+    > p > a:hover {
+        text-decoration: none;
+    }
+    > p > a:visited {
+        color: white;
     }
 }
