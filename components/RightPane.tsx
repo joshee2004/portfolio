@@ -173,6 +173,11 @@ const RightPane: React.FC = () => {
             </section>
             
             <footer className="max-w-md pt-16 pb-16 text-sm text-slate-500 md:pt-0">
+                <ul className="flex justify-between items-center mb-8">
+                    <a href="https://yellowbrickring.com/webring?from=example.com&to=prev">← Prev</a> |
+                    <strong><a href="https://yellowbrickring.com">Yellow Brick Ring</a></strong> |
+                    <a href="https://yellowbrickring.com/webring?from=example.com&to=next">Next →</a>
+                </ul>
                 <ul className="flex items-center" aria-label="Social media">
                   <li className="mr-5 shrink-0">
                     <a className="block hover:text-slate-200" href={GITHUB_URL} target="_blank" rel="noreferrer noopener" aria-label="GitHub">
