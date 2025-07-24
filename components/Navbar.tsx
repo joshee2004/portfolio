@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
               </li>
             ))}
           </ul>
-           <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="mt-8 text-center bg-teal-400 text-slate-900 font-bold py-3 px-6 rounded-lg hover:bg-teal-300 transition-colors duration-300">
+           <a href="/static/resume.pdf" target="_blank" rel="noopener noreferrer" className="mt-8 text-center bg-teal-400 text-slate-900 font-bold py-3 px-6 rounded-lg hover:bg-teal-300 transition-colors duration-300">
              Download Resume
            </a>
         </nav>
