@@ -59,7 +59,7 @@ const AnimatedDiv: React.FC<{children: ReactNode; className?: string}> = ({ chil
 
 // Sub-components for RightPane
 const SectionHeader: React.FC<{title: string}> = ({ title }) => (
-    <div className="mb-2 px-0 py-0">
+    <div className="mb-6 px-0 py-0">
         <h2 className="text-lg font-bold uppercase tracking-widest text-slate-200">{title}</h2>
     </div>
 );
