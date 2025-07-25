@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
       </header>
 
       {/* Full-screen menu */}
-      <div className={`fixed inset-0 z-30 bg-slate-900 transition-opacity duration-300 ease-in-out lg:hidden ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+      <div className={`fixed inset-0 z-30 bg-slate-900 transition-opacity duration-300 ease-in-out lg:hidden ${isOpen ? 'opacity-80' : 'opacity-0 pointer-events-none'}`}>
         <nav className="flex flex-col items-center justify-center h-full pt-16">
           <ul className="text-center">
             {navItems.map((item) => (
@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
             ))}
           </ul> 
            <a href="/resume.pdf" className="mt-8 text-center bg-teal-400 text-slate-900 font-bold py-3 px-6 rounded-lg hover:bg-teal-300 transition-colors duration-300">
-             Resume
+              Download Resume
            </a>
         </nav>
       </div>

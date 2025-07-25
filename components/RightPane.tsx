@@ -12,7 +12,7 @@ import {
     LinkedinIcon,
     WebsiteIcon
 } from '../constants';
-import { Project, Experience as ExperienceType, EducationItem, SkillCategory } from '../types';
+import { Project, Experience as ExperienceType, EducationItem } from '../types';
 
 // Custom hook to detect if an element is on screen
 const useOnScreen = <T extends Element,>(ref: React.RefObject<T>, options: IntersectionObserverInit = { threshold: 0.1 }): boolean => {
@@ -123,7 +123,7 @@ const EducationCard: React.FC<{item: EducationItem}> = ({item}) => (
 const RightPane: React.FC = () => {
     return (
         <main className="px-4 sm:px-8 lg:w-7/12 lg:py-16">
-            <section id="about" className="pt-16 mb-8 scroll-mt-12 md:pt-16 md:mb-12 lg:mb-16 lg:scroll-mt-16" aria-label="About me">
+            <section id="about" className="pt-8 mb-8 scroll-mt-12 md:pt-16 md:mb-12 lg:mb-16 lg:scroll-mt-16" aria-label="About me">
                 <SectionHeader title="About" />
                 <AnimatedDiv>
                     <p className="mb-4">Final-year B.E. student specializing in Artificial Intelligence and Machine Learning with strong technical exposure to full-stack development, data science, and AI integration. Passionate about technology and coding, I thrive on solving complex problems through data-driven approaches.</p>
@@ -131,7 +131,7 @@ const RightPane: React.FC = () => {
                 </AnimatedDiv>
             </section>
 
-            <section id="skills" className="mb-8 scroll-mt-12 md:mb-12 lg:mb-16 lg:scroll-mt-16" aria-label="Skills">
+            <section id="skills" className="pt-8 mb-8 scroll-mt-12 md:mb-12 lg:mb-16 lg:scroll-mt-16" aria-label="Skills">
                 <SectionHeader title="Skills" />
                  <AnimatedDiv>
                     {SKILLS.map((category) => (
@@ -149,21 +149,21 @@ const RightPane: React.FC = () => {
                 </AnimatedDiv>
             </section>
 
-            <section id="projects" className="mb-8 scroll-mt-12 md:mb-12 lg:mb-16 lg:scroll-mt-16" aria-label="Projects">
+            <section id="projects" className="pt-8 mb-8 scroll-mt-12 md:mb-12 lg:mb-16 lg:scroll-mt-16" aria-label="Projects">
                 <SectionHeader title="Projects" />
                 <ul className="group/list">
                     {PROJECTS.map((project, index) => <ProjectCard key={index} project={project} />)}
                 </ul>
             </section>
             
-            <section id="experience" className="mb-8 scroll-mt-12 md:mb-12 lg:mb-16 lg:scroll-mt-16" aria-label="Experience">
+            <section id="experience" className="pt-8 mb-8 scroll-mt-12 md:mb-12 lg:mb-16 lg:scroll-mt-16" aria-label="Experience">
                 <SectionHeader title="Experience" />
                 <ul className="group/list">
                     {EXPERIENCE.map((item, index) => <ExperienceCard key={index} item={item} />)}
                 </ul>
             </section>
 
-            <section id="education" className="mb-8 scroll-mt-12 md:mb-12 lg:mb-16 lg:scroll-mt-16" aria-label="Education">
+            <section id="education" className="pt-8 mb-8 scroll-mt-12 md:mb-12 lg:mb-16 lg:scroll-mt-16" aria-label="Education">
                 <SectionHeader title="Education" />
                 <AnimatedDiv>
                     <div className="space-y-2">
